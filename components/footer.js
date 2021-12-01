@@ -1,7 +1,8 @@
-export default function Footer(props) {
+export default function Footer({locations}) {
+    locations = {locations}
     return (
-        <footer className="bg-green-500 p-4 mt-8">
-            <p className="text-xl">{props.locations.length} Locations World Wide</p>
+        <footer className="fixed inset-x-0 bottom-0 p-4 mx-5 bg-green-500">
+            <p className="text-xl text-center">{locations.length} Locations World Wide</p>
         </footer>
     )
 }
